@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-4 col-12 px-5 mb-4" v-for="producto in productos" :key="producto.id">
           <div class="card">
-            <img :src="producto.imagen" alt="productoss">
+            <img :src="producto.imagen" :alt="producto.nombre">
             <div class="card-body">
               <h5 class="card-title fw-bold">{{ producto.nombre }}</h5>
               <p class="card-text">{{ producto.descripcion }}</p>
@@ -35,7 +35,7 @@
         productos: [
           {
             id: 1,
-            imagen: "../assets/img/desayunos.jpg",
+            imagen: require('../assets/img/desayunos.jpg'),
             nombre: 'Desayuno',
             descripcion: 'Contamos con desayunos nutritivos y deliciosos',
             precio: 2000,
@@ -43,7 +43,7 @@
           },
           {
             id: 2,
-            imagen: "../assets/img/bebidas.jpg",
+            imagen: require("../assets/img/bebidas.jpg"),
             nombre: 'Bebidas',
             descripcion: 'Contamos con ricas bebidas',
             precio: 1000,
@@ -51,7 +51,7 @@
           },
           {
             id: 3,
-            imagen: "../assets/img/empanadas.jpg",
+            imagen: require("../assets/img/empanadas.jpg"),
             nombre: 'Empanadas',
             descripcion: 'Contamos con ricas empanadas',
             precio: 1500,

@@ -32,14 +32,14 @@ export default {
 <style>
 .btn{display: flex;
     justify-content: center;}
-.button-index {
+    .button-index {
     margin-top: 10px;
     margin-left: 5px;
     padding: 5px;
     color: white;
     background-color: #e83e8c;
-    
-
+    border-radius: 8px;
+    border-color: #e83e8c;
 }
 
 .contact-card {
